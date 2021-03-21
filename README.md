@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+Let's make a game!
+	name: Hydration clicker
+Layout
+	use default
+Settings
+	use default
 
-You can use the [editor on GitHub](https://github.com/Vortigaunts/WaterGame/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Buttons
+	*waterButton
+		name:Take a sip
+		on click:yield 1 water
+	
+Resources
+	*water
+		name:Water
+		desc:You've got to drink something
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Buildings
+	*puddle|puddles
+		name:Puddle|Puddles
+		desc:A small collection of rainwater
+		cost:5 water
+		on tick:yield 1 water
+		unlocked
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Vortigaunts/WaterGame/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Upgrades
+	*cupOfWater
+		name:A tall glass of water
+		desc:Theres nothing more refreshing... increase water gained by taking a sip
+		cost:10 water
+		passive:increase water yield of waterButton by 2
+		
