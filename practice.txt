@@ -29,5 +29,3 @@ Upgrades
 		desc:Theres nothing more refreshing... increase water gained by taking a sip
 		cost:10 water
 		passive:increase water yield of waterButton by 2
-		icon:
-		
